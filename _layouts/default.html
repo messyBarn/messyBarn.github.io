@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/barn_favicon.png"
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    {% feed_meta %}
+    <link rel="stylesheet" href="/assets/css/custom.css">
+  </head>
+  <body>
+      <header>
+        <h1>{{ page.header }}</h1>
+        <p>{{ page.description }}</p>
+  
+        {% include navigation.html %}
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <p>made with love</p>
+      </footer>
+  </body>
+ </html>
